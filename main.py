@@ -1,4 +1,5 @@
 from tkinter import *
+import tkinter as tk
 
 expression =""
 
@@ -21,7 +22,7 @@ def clear():
 if __name__ == "__main__":
     
     # gui window 
-    gui = TK()
+    gui = tk.Tk()
     
     # set the background colour of GUI window
     gui.configure(background="light green")
@@ -102,7 +103,7 @@ if __name__ == "__main__":
     divide.grid(row=5, column=3)
  
     equal = Button(gui, text=' = ', fg='black', bg='red',
-                command=equalpress, height=1, width=7)
+                command=equalPress, height=1, width=7)
     equal.grid(row=5, column=2)
  
     clear = Button(gui, text='Clear', fg='black', bg='red',
